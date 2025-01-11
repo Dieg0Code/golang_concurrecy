@@ -696,3 +696,26 @@ func main() {
     }
 }
 ```
+
+## The Dining Philosophers problem
+
+Es un problema clásico de las ciencias de la computación introducido por Dijkstra en 1965. El problema consiste en que cinco filósofos están sentados alrededor de una mesa redonda. Cada filósofo tiene un plato de espaguetis. Para comer los espaguetis, un filósofo necesita dos tenedores. Los filósofos pueden estar en uno de dos estados: pensando o comiendo. Mientras piensan, no interactúan con sus vecinos. Cuando deciden comer, intentan tomar los dos tenedores que están a su izquierda y a su derecha, lo que significa que no pueden comer dos filósofos vecinos al mismo tiempo. El problema es encontrar una estrategia para que cada filósofo pueda comer sin que se produzca un deadlock, es decir, que todos los filósofos estén esperando a que un tenedor esté disponible y ninguno pueda comer.
+
+![Dining Philosophers](./img/theDiningPhilosophers.png)
+
+```go
+package main
+
+// The Dining Philosophers Problem is well know in computer science circles
+// Five philosophers, numbered from 0 through 4, live in a house where the
+// table is laid for them; each philosopher has their own place in the table.
+// Their only difficulty - besides those of philosophy - is that the dish
+// served is a very difficult kind of spaghetti which has to be eaten with
+// two forks. There are two next to each plate, so that present no
+// difficulty. As a consequence, however, this means that no two neighbors
+// may be eating simultaneously, since there are five philosophers and five forks.
+//
+// This is a simple implementation of the Dijkstra's solution to the "Dining
+// Philosophers" dilema.
+
+```
